@@ -1,0 +1,19 @@
+server:
+  port: 8083
+
+spring:
+  application:
+    name: API-GATEWAY
+
+cloud:
+  gateway:
+    routes:
+      - id: POST-SERVICE
+        uri: lb://POST-SERVICE
+        predicates:
+          - Path=/api/posts/**
+
+      - id: COMMENT-SERVICE
+        uri: lb://COMMENT-SERVICE
+        predicates:
+          - Path=/api/comments/**
