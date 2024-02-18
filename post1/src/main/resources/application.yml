@@ -2,7 +2,7 @@ spring:
   application:
     name: POST-SERVICE
   datasource:
-    url: jdbc:mysql://localhost:3306/postdb3
+    url: jdbc:mysql://localhost:3306/postdb
     username: root
     password: test
   jpa:

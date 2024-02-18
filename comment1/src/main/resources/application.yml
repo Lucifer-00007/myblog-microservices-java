@@ -2,7 +2,7 @@ spring:
   application:
     name: COMMENT-SERVICE
   datasource:
-    url: jdbc:mysql://localhost:3306/commentdb3
+    url: jdbc:mysql://localhost:3306/commentdb
     username: root
     password: test
   jpa:
